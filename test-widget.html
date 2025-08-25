@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste AI Agent Widget - Ciência dos Dados</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #8b5cf6;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .info {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #8b5cf6;
+        }
+        
+        .status {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            color: #8b5cf6;
+            margin-bottom: 10px;
+        }
+        
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #92400e;
+            font-weight: bold;
+        }
+        
+        .instructions {
+            background: #ecfdf5;
+            border: 1px solid #10b981;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .instructions h3 {
+            color: #059669;
+            margin-top: 0;
+        }
+        
+        .test-content {
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Teste AI Agent Widget</h1>
+        
+        <div class="status">✅ Widget Funcionando</div>
+        
+        <div class="info">
+            <h3>📊 Configurações do Widget:</h3>
+            <ul>
+                <li><strong>URL:</strong> https://019862e0-fab8-744d-84bb-1ee94c37a1a3.aiproexpert.workers.dev</li>
+                <li><strong>Agent ID:</strong> 1</li>
+                <li><strong>Tema:</strong> Light</li>
+                <li><strong>Cor:</strong> #8b5cf6 (Roxo)</li>
+                <li><strong>Posição:</strong> Bottom Right</li>
+                <li><strong>Tamanho:</strong> 350x400px</li>
+            </ul>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🎨 Design</h3>
+                <p>Tema claro com bordas arredondadas e sombra elegante</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📱 Responsivo</h3>
+                <p>Adapta automaticamente para mobile e desktop</p>
+            </div>
+            
+            <div class="feature">
+                <h3>⚡ Rápido</h3>
+                <p>Carregamento instantâneo via iframe</p>
+            </div>
+        </div>
+        
+        <div class="test-content">
+            <h3>🧪 Como Testar:</h3>
+            <p>1. <strong>Olhe no canto inferior direito</strong> - o widget deve aparecer automaticamente</p>
+            <p>2. <strong>Clique no widget</strong> para abrir o chat</p>
+            <p>3. <strong>Digite uma mensagem</strong> e teste a resposta do agente</p>
+            <p>4. <strong>Teste no mobile</strong> - redimensione a janela para ver como fica responsivo</p>
+        </div>
+        
+        <div class="instructions">
+            <h3>🚀 Para usar no seu site:</h3>
+            <p>Copie e cole o código abaixo <strong>antes do &lt;/body&gt;</strong> do seu site:</p>
+            
+            <div class="code-block">
+&lt;!-- AI Agent Widget - AGENTE 01 --&gt;<br>
+&lt;div id="ai-agent-widget-1"&gt;&lt;/div&gt;<br>
+&lt;script&gt;<br>
+&nbsp;&nbsp;(function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;var widget = document.createElement('iframe');<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.src = '<span class="highlight">https://019862e0-fab8-744d-84bb-1ee94c37a1a3.aiproexpert.workers.dev/widget?agentId=1&theme=light&position=bottom-right&primaryColor=8b5cf6&size=small&showName=true&showAvatar=true&welcome=Fala+a%C3%AA%2Cbeleza%3F&placeholder=opa%2C+b%C3%A3o....&height=400px&width=350px</span>';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.border = 'none';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.position = 'fixed';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.zIndex = '9999';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.borderRadius = '12px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.2)';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.bottom = '20px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.right = '20px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.width = '350px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;widget.style.height = '400px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if (window.innerWidth &lt; 768) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widget.style.width = '90vw';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widget.style.height = '70vh';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widget.style.bottom = '10px';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widget.style.right = '5vw';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widget.style.left = '5vw';<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('ai-agent-widget-1').appendChild(widget);<br>
+&nbsp;&nbsp;})();<br>
+&lt;/script&gt;
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; color: #666;">
+            <p>✨ <strong>Widget criado com AI Agent Hub</strong> ✨</p>
+            <p>Plataforma completa para criar agentes IA personalizados</p>
+        </div>
+    </div>
+
+    <!-- AI Agent Widget - AGENTE 01 -->
+    <div id="ai-agent-widget-1"></div>
+    <script>
+      (function() {
+        var widget = document.createElement('iframe');
+        widget.src = 'https://019862e0-fab8-744d-84bb-1ee94c37a1a3.aiproexpert.workers.dev/widget?agentId=1&theme=light&position=bottom-right&primaryColor=8b5cf6&size=small&showName=true&showAvatar=true&welcome=Fala+a%C3%AA%2Cbeleza%3F&placeholder=opa%2C+b%C3%A3o....&height=400px&width=350px';
+        widget.style.border = 'none';
+        widget.style.position = 'fixed';
+        widget.style.zIndex = '9999';
+        widget.style.borderRadius = '12px';
+        widget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.2)';
+        
+        // Position based on config
+        widget.style.bottom = '20px'; 
+        widget.style.right = '20px';
+        
+        // Size
+        widget.style.width = '350px';
+        widget.style.height = '400px';
+        
+        // Mobile responsive
+        if (window.innerWidth < 768) {
+          widget.style.width = '90vw';
+          widget.style.height = '70vh';
+          widget.style.bottom = '10px';
+          widget.style.right = '5vw';
+          widget.style.left = '5vw';
+        }
+        
+        document.getElementById('ai-agent-widget-1').appendChild(widget);
+      })();
+    </script>
+</body>
+</html>

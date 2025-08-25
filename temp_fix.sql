@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS agent_knowledge_settings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  agent_id INTEGER NOT NULL,
+  chunk_size INTEGER DEFAULT 1000,
+  overlap_size INTEGER DEFAULT 200,
+  similarity_threshold REAL DEFAULT 0.7,
+  max_results INTEGER DEFAULT 5,
+  strategy TEXT DEFAULT 'semantic',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

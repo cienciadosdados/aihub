@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(npx wrangler:*)",
+      "Bash(claude config --help)",
+      "Bash(claude --model opus)",
+      "Bash(claude --model opus \"olá\")",
+      "Bash(npx tsc:*)"
+    ],
+    "deny": [],
+    "additionalDirectories": [
+      "C:\\c\\soft"
+    ]
+  }
+}
