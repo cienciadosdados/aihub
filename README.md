@@ -2,8 +2,6 @@
 
 Uma plataforma completa para criar, gerenciar e interagir with agentes de inteligência artificial personalizados com suporte a RAG (Retrieval-Augmented Generation).
 
-Este app foi criado usando https://getmocha.com.
-Precisa de ajuda ou quer se juntar à comunidade? Entre no nosso [Discord](https://discord.gg/shDEGBSe2d).
 
 ## 🚀 Funcionalidades
 
