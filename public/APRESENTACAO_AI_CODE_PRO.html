@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 AI Agent Hub - Estratégia de Apresentação AI CODE PRO</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2d3748;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            color: #4a5568;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #2d3748;
+            margin-top: 30px;
+        }
+        
+        h4 {
+            color: #4a5568;
+            margin-top: 25px;
+        }
+        
+        .timing {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        
+        .section {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Fira Code', 'Consolas', monospace;
+            position: relative;
+        }
+        
+        .code-block::before {
+            content: attr(data-lang);
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 12px;
+            color: #a0aec0;
+            text-transform: uppercase;
+        }
+        
+        .mermaid-container {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .demo-steps {
+            background: #e6fffa;
+            border-left: 5px solid #38b2ac;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 15px 0;
+        }
+        
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .key-point {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .metric {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta h2 {
+            border: none;
+            padding: 0;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            .key-points, .metrics { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 AI Agent Hub - Estratégia de Apresentação AI CODE PRO</h1>
+        
+        <h2>📋 Roteiro Detalhado <span class="timing">90 minutos</span></h2>
+
+        <div class="section">
+            <h3>🚀 <strong>1. Abertura: "O Problema Real"</strong> <span class="timing">10min</span></h3>
+            <p><strong>Hook:</strong> "Quantos já tentaram integrar IA em produção e se frustraram?"</p>
+            
+            <p><strong>Problemas comuns:</strong></p>
+            <ul>
+                <li>IA genérica demais para casos específicos</li>
+                <li>Dificuldade de adicionar conhecimento próprio</li>
+                <li>Complexidade de deployment e escala</li>
+                <li>Falta de controle sobre respostas</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Nossa solução:</strong> Plataforma completa de AI Agents com RAG
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🏗️ <strong>2. Arquitetura & Stack Técnica</strong> <span class="timing">20min</span></h3>
+            
+            <h4><strong>Diagrama 1: Visão Geral do Sistema</strong></h4>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    flowchart TD
+                        A[👤 Usuário] --> B[🌐 Cloudflare Worker<br/>workers.dev]
+                        
+                        B --> C{🔐 Autenticação}
+                        C -->|✅ Válido| D[🎯 Roteamento Hono]
+                        C -->|❌ Inválido| E[🚫 Erro 401]
+                        
+                        D --> F[📊 D1 Database<br/>SQLite]
+                        D --> G[🗂️ R2 Storage<br/>Arquivos]
+                        D --> H[🔍 Pinecone<br/>Vetores]
+                        D --> I[🤖 OpenAI API<br/>LLM]
+                        
+                        F --> J[👥 Workspaces]
+                        F --> K[🤖 Agents]
+                        F --> L[📚 Knowledge Base]
+                        
+                        style A fill:#e1f5fe
+                        style B fill:#f3e5f5
+                        style F fill:#e8f5e8
+                        style H fill:#fff3e0
+                        style I fill:#fce4ec
+                </div>
+            </div>
+
+            <p><strong>Código Live - Setup Básico:</strong></p>
+            <div class="code-block" data-lang="typescript">
+// src/worker/index.ts
+import { Hono } from 'hono';
+import { cors } from 'hono/cors';
+
+interface Env {
+  DB: any; // D1Database
+  R2: any; // R2Bucket
+  OPENAI_API_KEY: string;
+  PINECONE_API_KEY: string;
+  RAG_QUEUE: Queue&lt;QueueMessage&gt;;
+}
+
+const app = new Hono&lt;{ Bindings: Env }&gt;();
+
+app.use("*", cors({
+  origin: "*",
+  allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+}));
+            </div>
+
+            <h4><strong>Diagrama 2: Stack Técnica</strong></h4>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    flowchart LR
+                        subgraph Development [Desenvolvimento Local]
+                            A[React App - localhost:5173]
+                            B[Vite Build Tool]
+                            C[TypeScript]
+                            D[Tailwind CSS]
+                        end
+                        
+                        subgraph Production [Produção Cloudflare]
+                            E[Cloudflare Worker]
+                            F[D1 Database - SQLite]
+                            G[R2 Storage - S3-like]
+                            H[KV Storage - Cache]
+                            I[Queue - Background Jobs]
+                        end
+                        
+                        subgraph External [Serviços Externos]
+                            J[OpenAI API]
+                            K[Pinecone Vector DB]
+                            L[Mocha Users Service]
+                        end
+                        
+                        A --> E
+                        E --> F
+                        E --> G
+                        E --> H
+                        E --> I
+                        E --> J
+                        E --> K
+                        E --> L
+                </div>
+            </div>
+
+            <p><strong>Por que Cloudflare Workers?</strong></p>
+            <ul>
+                <li><strong>Edge Computing:</strong> Latência ultra baixa globalmente</li>
+                <li><strong>Serverless:</strong> Zero configuração de servidor</li>
+                <li><strong>Escala automática:</strong> De 0 a milhões de requests</li>
+                <li><strong>Custo:</strong> Muito mais barato que AWS/Azure</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🧠 <strong>3. RAG Pipeline - O Coração do Sistema</strong> <span class="timing">25min</span></h3>
+            
+            <h4><strong>Diagrama 3: Sistema RAG Completo</strong></h4>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    flowchart TD
+                        subgraph "📄 ENTRADA DE DOCUMENTOS"
+                            DOC[📁 Usuário faz upload<br/>PDF, DOCX, URL, YouTube]
+                        end
+                        
+                        subgraph "⚡ PROCESSAMENTO ASSÍNCRONO"
+                            QUEUE[🔄 Cloudflare Queue<br/>Background Processing]
+                            EXTRACT[🔍 Extração de Conteúdo<br/>unpdf, html-parser]
+                            CHUNK[✂️ Chunking Inteligente<br/>Semantic, Paragraph, Recursive]
+                        end
+                        
+                        subgraph "🤖 GERAÇÃO DE EMBEDDINGS"
+                            EMBED[🧠 OpenAI Embeddings<br/>text-embedding-3-small]
+                            BATCH[📦 Processamento em Lotes<br/>Otimização de API calls]
+                        end
+                        
+                        subgraph "🗄️ ARMAZENAMENTO VETORIAL"
+                            PINECONE[🔍 Pinecone Vector DB<br/>Busca por Similaridade]
+                            META[📋 Metadata Storage<br/>Source, Chunk Index, Agent ID]
+                        end
+                        
+                        subgraph "💬 CONSULTA E RESPOSTA"
+                            QUERY[❓ Pergunta do Usuário]
+                            SEARCH[🔎 Busca Vetorial<br/>Cosine, Euclidean, Hybrid]
+                            CONTEXT[📚 Contexto Relevante<br/>Top K chunks]
+                            LLM[🤖 OpenAI GPT<br/>Resposta Contextualizada]
+                        end
+                        
+                        DOC --> QUEUE
+                        QUEUE --> EXTRACT
+                        EXTRACT --> CHUNK
+                        CHUNK --> EMBED
+                        EMBED --> BATCH
+                        BATCH --> PINECONE
+                        PINECONE --> META
+                        
+                        QUERY --> SEARCH
+                        SEARCH --> PINECONE
+                        PINECONE --> CONTEXT
+                        CONTEXT --> LLM
+                </div>
+            </div>
+
+            <p><strong>Código Live - Processamento RAG:</strong></p>
+            <div class="code-block" data-lang="typescript">
+// src/worker/pinecone-rag.ts
+export class PineconeRAGProcessor {
+  
+  async chunkText(
+    text: string, 
+    chunkSize: number = 2000, 
+    overlap: number = 400, 
+    strategy: 'paragraph' | 'sentence' | 'recursive' | 'semantic' = 'semantic'
+  ): Promise&lt;DocumentChunk[]&gt; {
+    
+    // Chunking semântico usando OpenAI
+    const semanticChunks = await this.semanticChunker.chunkTextSemantically(
+      text, 
+      chunkSize, 
+      overlap
+    );
+    
+    return semanticChunks.map((chunk, index) => ({
+      content: chunk.content,
+      metadata: {
+        chunk_index: index,
+        chunk_size: chunk.content.length,
+        strategy: 'semantic'
+      },
+      chunk_index: index
+    }));
+  }
+
+  async searchSimilarChunks(
+    query: string,
+    agentId: number,
+    topK: number = 5,
+    threshold: number = 0.7,
+    strategy: 'cosine' | 'euclidean' | 'hybrid' = 'hybrid'
+  ): Promise&lt;DocumentChunk[]&gt; {
+    
+    // Gerar embedding da query
+    const queryEmbedding = await this.generateEmbedding(query);
+    
+    // Buscar no Pinecone
+    const results = await this.vectorStore.query({
+      vector: queryEmbedding,
+      topK,
+      filter: { agent_id: agentId },
+      includeMetadata: true
+    });
+    
+    // Filtrar por threshold
+    return results.matches
+      .filter(match => match.score >= threshold)
+      .map(match => ({
+        content: match.metadata.content,
+        metadata: match.metadata,
+        chunk_index: match.metadata.chunk_index
+      }));
+  }
+}
+            </div>
+
+            <h4><strong>Diagrama 4: Fluxo de Processamento</strong></h4>
+            <div class="mermaid-container">
+                <div class="mermaid">
+                    sequenceDiagram
+                        participant U as 👤 Usuário
+                        participant F as 🌐 Frontend
+                        participant W as ☁️ Worker
+                        participant Q as 🔄 Queue
+                        participant O as 🤖 OpenAI
+                        participant P as 🔍 Pinecone
+                        
+                        U->>F: Upload PDF
+                        F->>W: POST /api/knowledge-sources
+                        W->>W: Salvar no D1 + R2
+                        W->>Q: Enviar para Queue
+                        W-->>F: 201 Created (imediato)
+                        
+                        Q->>W: Processar em background
+                        W->>W: Extrair texto (unpdf)
+                        W->>W: Chunking semântico
+                        W->>O: Gerar embeddings
+                        O-->>W: Vetores 1536d
+                        W->>P: Armazenar vetores
+                        W->>W: Atualizar status D1
+                        
+                        Note over U,P: Documento processado e pronto para consulta
+                        
+                        U->>F: Fazer pergunta
+                        F->>W: POST /api/agents/execute
+                        W->>O: Embedding da pergunta
+                        W->>P: Buscar chunks similares
+                        P-->>W: Top 5 chunks relevantes
+                        W->>O: GPT com contexto
+                        O-->>W: Resposta contextualizada
+                        W-->>F: Resposta final
+                        F-->>U: Exibir resposta
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>💻 <strong>4. Demo LIVE - Criando um Agente</strong> <span class="timing">20min</span></h3>
+            
+            <div class="demo-steps">
+                <p><strong>Roteiro da Demo:</strong></p>
+                <ol>
+                    <li><strong>Criar Workspace</strong>
+                        <ul>
+                            <li>Mostrar interface React</li>
+                            <li>Explicar conceito de multi-tenancy</li>
+                        </ul>
+                    </li>
+                    <li><strong>Criar Agente IA</strong>
+                        <ul>
+                            <li>System prompt personalizado</li>
+                            <li>Configurar modelo (GPT-4o)</li>
+                            <li>Ajustar parâmetros (temperature, max_tokens)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adicionar Conhecimento</strong>
+                        <ul>
+                            <li>Upload de PDF técnico</li>
+                            <li>Mostrar processamento em background</li>
+                            <li>Explicar chunking strategy</li>
+                        </ul>
+                    </li>
+                    <li><strong>Chat em Tempo Real</strong>
+                        <ul>
+                            <li>Fazer perguntas específicas do documento</li>
+                            <li>Mostrar como o RAG funciona</li>
+                            <li>Métricas de performance</li>
+                        </ul>
+                    </li>
+                    <li><strong>Widget Embed</strong>
+                        <ul>
+                            <li>Gerar código de incorporação</li>
+                            <li>Testar em página externa</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <p><strong>Código da Demo - Endpoint de Chat:</strong></p>
+            <div class="code-block" data-lang="typescript">
+// Endpoint principal de chat
+app.post('/api/agents/:agentId/execute', 
+  zValidator('json', ExecuteAgentSchema),
+  async (c) => {
+    const { agentId } = c.req.param();
+    const { message } = c.req.valid('json');
+    
+    // Buscar agente
+    const agent = await c.env.DB.prepare(`
+      SELECT * FROM agents WHERE id = ? AND active = 1
+    `).bind(agentId).first();
+    
+    // RAG Search se habilitado
+    let contextMessage = message;
+    if (agent.enable_rag) {
+      const ragProcessor = new PineconeRAGProcessor(
+        c.env.OPENAI_API_KEY,
+        c.env.PINECONE_API_KEY
+      );
+      
+      const relevantChunks = await ragProcessor.searchSimilarChunks(
+        message,
+        parseInt(agentId),
+        agent.max_chunks_per_query,
+        agent.similarity_threshold,
+        agent.search_strategy
+      );
+      
+      if (relevantChunks.length > 0) {
+        const context = relevantChunks.map(chunk => chunk.content).join('\n\n');
+        contextMessage = `Context: ${context}\n\nQuestion: ${message}`;
+      }
+    }
+    
+    // Chamar OpenAI
+    const openai = new OpenAI({ apiKey: c.env.OPENAI_API_KEY });
+    const completion = await openai.chat.completions.create({
+      model: agent.model,
+      messages: [
+        { role: "system", content: agent.system_prompt },
+        { role: "user", content: contextMessage }
+      ],
+      temperature: agent.temperature,
+      max_tokens: agent.max_tokens,
+    });
+    
+    return c.json({
+      response: completion.choices[0].message.content,
+      tokens_used: completion.usage.total_tokens
+    });
+  }
+);
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🔧 <strong>5. Implementação Técnica Avançada</strong> <span class="timing">10min</span></h3>
+            
+            <p><strong>Queue Processing para RAG Assíncrono:</strong></p>
+            <div class="code-block" data-lang="typescript">
+// Queue Consumer
+export default {
+  async queue(batch: MessageBatch&lt;QueueMessage&gt;, env: Env): Promise&lt;void&gt; {
+    for (const message of batch.messages) {
+      try {
+        const { sourceId, agentId, data } = message.body;
+        
+        const ragProcessor = new PineconeRAGProcessor(
+          env.OPENAI_API_KEY,
+          env.PINECONE_API_KEY
+        );
+        
+        await ragProcessor.processKnowledgeSource(
+          sourceId,
+          agentId,
+          data,
+          {
+            chunk_size: 2000,
+            chunk_overlap: 400,
+            chunking_strategy: 'semantic'
+          }
+        );
+        
+        // Atualizar status no banco
+        await env.DB.prepare(`
+          UPDATE knowledge_sources 
+          SET status = 'completed', processed_at = datetime('now')
+          WHERE id = ?
+        `).bind(sourceId).run();
+        
+        message.ack();
+      } catch (error) {
+        console.error('Queue processing error:', error);
+        message.retry();
+      }
+    }
+  }
+};
+            </div>
+
+            <p><strong>Semantic Chunking Avançado:</strong></p>
+            <div class="code-block" data-lang="typescript">
+// src/worker/semantic-chunker.ts
+export class SemanticChunker {
+  
+  async chunkTextSemantically(
+    text: string,
+    targetChunkSize: number = 2000,
+    overlap: number = 400
+  ): Promise&lt;SemanticChunk[]&gt; {
+    
+    // 1. Dividir em sentenças
+    const sentences = this.splitIntoSentences(text);
+    
+    // 2. Gerar embeddings para cada sentença
+    const sentenceEmbeddings = await this.batchGenerateEmbeddings(sentences);
+    
+    // 3. Calcular similaridade entre sentenças adjacentes
+    const similarities = this.calculateSimilarities(sentenceEmbeddings);
+    
+    // 4. Encontrar pontos de quebra semântica
+    const breakpoints = this.findSemanticBreakpoints(similarities);
+    
+    // 5. Formar chunks respeitando tamanho alvo
+    const chunks = this.formChunks(sentences, breakpoints, targetChunkSize, overlap);
+    
+    return chunks;
+  }
+  
+  private calculateSimilarities(embeddings: number[][]): number[] {
+    const similarities: number[] = [];
+    
+    for (let i = 0; i < embeddings.length - 1; i++) {
+      const similarity = this.cosineSimilarity(embeddings[i], embeddings[i + 1]);
+      similarities.push(similarity);
+    }
+    
+    return similarities;
+  }
+}
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🚀 <strong>6. Deploy & Produção</strong> <span class="timing">5min</span></h3>
+            
+            <p><strong>Cloudflare Workers Deployment:</strong></p>
+            <div class="code-block" data-lang="bash">
+# Deploy simples
+npx wrangler deploy
+
+# Com secrets
+npx wrangler secret put OPENAI_API_KEY
+npx wrangler secret put PINECONE_API_KEY
+
+# Configurar D1 Database
+npx wrangler d1 create ai-agent-hub-db
+npx wrangler d1 migrations apply ai-agent-hub-db
+
+# Configurar R2 Bucket
+npx wrangler r2 bucket create documents
+
+# Configurar Queue
+npx wrangler queues create rag-processing
+            </div>
+
+            <p><strong>Configuração wrangler.jsonc:</strong></p>
+            <div class="code-block" data-lang="json">
+{
+  "name": "ai-agent-hub",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "ai-agent-hub-db",
+    "database_id": "xxx"
+  }],
+  
+  "r2_buckets": [{
+    "binding": "R2",
+    "bucket_name": "documents"
+  }],
+  
+  "queues": {
+    "producers": [{
+      "binding": "RAG_QUEUE",
+      "queue": "rag-processing"
+    }],
+    "consumers": [{
+      "queue": "rag-processing",
+      "max_batch_size": 10,
+      "max_retries": 3
+    }]
+  }
+}
+            </div>
+        </div>
+
+        <h2>🎯 <strong>Pontos-Chave para Enfatizar</strong></h2>
+
+        <div class="key-points">
+            <div class="key-point">
+                <h4><strong>Para Devs Iniciantes em IA:</strong></h4>
+                <ul>
+                    <li>RAG não é mágica - é busca vetorial + contexto</li>
+                    <li>Chunking strategy impacta diretamente a qualidade</li>
+                    <li>Embeddings são apenas representações numéricas de texto</li>
+                    <li>Threshold de similaridade precisa ser ajustado por caso</li>
+                </ul>
+            </div>
+
+            <div class="key-point">
+                <h4><strong>Para Devs Experientes:</strong></h4>
+                <ul>
+                    <li>Edge computing reduz latência drasticamente</li>
+                    <li>Queue processing evita timeouts em uploads grandes</li>
+                    <li>Semantic chunking > chunking fixo</li>
+                    <li>Monitoramento de tokens é crucial para custos</li>
+                </ul>
+            </div>
+
+            <div class="key-point">
+                <h4><strong>Arquitetura Highlights:</strong></h4>
+                <ul>
+                    <li><strong>Serverless-first:</strong> Zero manutenção de infraestrutura</li>
+                    <li><strong>Multi-tenant:</strong> Isolamento completo por workspace</li>
+                    <li><strong>Async processing:</strong> UX responsiva mesmo com processamento pesado</li>
+                    <li><strong>Vector search:</strong> Busca semântica real, não keyword matching</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>📊 <strong>Métricas de Sucesso do Projeto</strong></h2>
+
+        <div class="metrics">
+            <div class="metric">
+                <h4>⚡ Performance</h4>
+                <p>&lt; 200ms response time global</p>
+            </div>
+            <div class="metric">
+                <h4>🚀 Escala</h4>
+                <p>Suporta milhares de agentes simultâneos</p>
+            </div>
+            <div class="metric">
+                <h4>💰 Custo</h4>
+                <p>~$0.01 por 1000 requests<br/>(vs $1+ em soluções tradicionais)</p>
+            </div>
+            <div class="metric">
+                <h4>🛠️ DX</h4>
+                <p>Setup completo em &lt; 5 minutos</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>🔥 <strong>Call to Action Final</strong></h2>
+            
+            <p><strong>"Vocês acabaram de ver um sistema completo de IA em produção. Não é só um chatbot - é uma plataforma que pode ser adaptada para qualquer caso de uso que precise de IA + conhecimento específico."</strong></p>
+            
+            <p><strong>Próximos passos:</strong></p>
+            <ol>
+                <li>Clonar o repo e rodar localmente</li>
+                <li>Experimentar com seus próprios documentos</li>
+                <li>Adaptar para seus casos de uso</li>
+                <li>Contribuir com melhorias</li>
+            </ol>
+            
+            <p><strong>Repositório:</strong> <code>github.com/seu-usuario/ai-agent-hub</code></p>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#667eea',
+                primaryTextColor: '#2d3748',
+                primaryBorderColor: '#4a5568',
+                lineColor: '#667eea',
+                secondaryColor: '#f7fafc',
+                tertiaryColor: '#e2e8f0'
+            }
+        });
+    </script>
+</body>
+</html>

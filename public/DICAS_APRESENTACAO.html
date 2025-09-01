@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎤 Dicas Práticas para a Apresentação AI CODE PRO</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2d3748;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            color: #4a5568;
+            border-left: 5px solid #ff6b6b;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: #2d3748;
+            margin-top: 30px;
+        }
+        
+        h4 {
+            color: #4a5568;
+            margin-top: 25px;
+        }
+        
+        .section {
+            background: #f7fafc;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #ff6b6b;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .demo-script {
+            background: #e6fffa;
+            border-left: 5px solid #38b2ac;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 15px 0;
+            font-family: 'Fira Code', 'Consolas', monospace;
+        }
+        
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Fira Code', 'Consolas', monospace;
+            position: relative;
+        }
+        
+        .code-block::before {
+            content: attr(data-lang);
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 12px;
+            color: #a0aec0;
+            text-transform: uppercase;
+        }
+        
+        .hooks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .hook {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .metric {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .checklist {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .checklist ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .checklist li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #68d391;
+            font-weight: bold;
+        }
+        
+        .timing-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .audience {
+            background: #fff5f5;
+            border: 2px solid #fc8181;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .emergency {
+            background: #fed7d7;
+            border: 2px solid #e53e3e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta h2 {
+            border: none;
+            padding: 0;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            .hooks, .metrics-grid, .audience-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Dicas Práticas para a Apresentação AI CODE PRO</h1>
+        
+        <div class="section">
+            <h2>🎯 <strong>Estratégia de Engajamento</strong></h2>
+            
+            <h3><strong>🔥 Hooks que Funcionam com Devs:</strong></h3>
+            <div class="hooks">
+                <div class="hook">
+                    <p>"Quantos já gastaram horas tentando fazer RAG funcionar direito?"</p>
+                </div>
+                <div class="hook">
+                    <p>"Quem aqui já teve pesadelo com deployment de IA?"</p>
+                </div>
+                <div class="hook">
+                    <p>"Vou mostrar como fazer o que a OpenAI cobra $20/mês por $0.50"</p>
+                </div>
+            </div>
+
+            <h3><strong>💡 Momentos "Aha!" para Criar:</strong></h3>
+            <ol>
+                <li><strong>Chunking Semântico:</strong> Mostrar diferença visual entre chunking fixo vs semântico</li>
+                <li><strong>Edge Computing:</strong> Demonstrar latência Brasil vs EUA (< 50ms)</li>
+                <li><strong>Queue Processing:</strong> Upload de 50MB PDF processando em background</li>
+                <li><strong>Vector Search:</strong> Busca por "performance de banco" encontrando "otimização SQL"</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>🖥️ <strong>Setup Técnico da Apresentação</strong></h2>
+            
+            <div class="tip-box">
+                <h3><strong>Tela Dupla Recomendada:</strong></h3>
+                <ul>
+                    <li><strong>Tela 1:</strong> Slides com diagramas Mermaid</li>
+                    <li><strong>Tela 2:</strong> VSCode + Browser para demo live</li>
+                </ul>
+            </div>
+
+            <h3><strong>Preparação Prévia:</strong></h3>
+            <div class="code-block" data-lang="bash">
+# Terminal 1 - Frontend
+cd C:\soft\hub2
+npm run dev
+
+# Terminal 2 - Logs do Worker
+npx wrangler tail --format=pretty
+
+# Terminal 3 - Deploy rápido se necessário
+npx wrangler deploy
+            </div>
+
+            <h3><strong>Bookmarks Essenciais:</strong></h3>
+            <ul>
+                <li><code>localhost:5173</code> - Frontend local</li>
+                <li><code>https://019862e0-fab8-744d-84bb-1ee94c37a1a3.aiproexpert.workers.dev</code> - Produção</li>
+                <li>Pinecone Dashboard</li>
+                <li>Cloudflare Dashboard</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📱 <strong>Demo Script Detalhado</strong></h2>
+            
+            <h3><strong>Demo 1: Criação de Agente (5min)</strong></h3>
+            <div class="demo-script">
+1. Abrir frontend → "Vamos criar um agente do zero"
+2. Criar workspace "AI CODE PRO Demo"
+3. Criar agente "Especialista Python"
+   - System prompt: "Você é um expert em Python..."
+   - Modelo: GPT-4o
+   - Temperature: 0.3
+4. Mostrar configurações avançadas RAG
+            </div>
+
+            <h3><strong>Demo 2: Upload de Conhecimento (8min)</strong></h3>
+            <div class="demo-script">
+1. Preparar PDF técnico (ex: Python best practices)
+2. Upload → "Olhem o que acontece nos logs"
+3. Mostrar wrangler tail em tempo real:
+   - Queue processing
+   - Chunking semântico
+   - Embedding generation
+   - Pinecone storage
+4. Explicar: "Isso roda em background, usuário não espera"
+            </div>
+
+            <h3><strong>Demo 3: Chat Inteligente (5min)</strong></h3>
+            <div class="demo-script">
+1. Pergunta genérica: "Como fazer um loop em Python?"
+2. Pergunta específica do PDF: "Qual a melhor prática para..."
+3. Mostrar diferença nas respostas
+4. Explicar contexto sendo injetado
+            </div>
+
+            <h3><strong>Demo 4: Widget Embed (2min)</strong></h3>
+            <div class="demo-script">
+1. Gerar código de embed
+2. Abrir HTML simples em nova aba
+3. Testar chat funcionando
+4. "Pronto, seu agente está público"
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎨 <strong>Visualizações Impactantes</strong></h2>
+            
+            <h3><strong>Diagramas Essenciais (em ordem):</strong></h3>
+            <ol>
+                <li><strong>Arquitetura Geral</strong> - "Visão de 30.000 pés"</li>
+                <li><strong>RAG Pipeline</strong> - "O cérebro do sistema"</li>
+                <li><strong>Fluxo Sequencial</strong> - "Como tudo se conecta"</li>
+                <li><strong>Edge Computing</strong> - "Por que é tão rápido"</li>
+            </ol>
+
+            <h3><strong>Código para Destacar:</strong></h3>
+            <div class="code-block" data-lang="typescript">
+// 1. Setup simples mas poderoso
+const app = new Hono&lt;{ Bindings: Env }&gt;();
+
+// 2. RAG em ação
+const relevantChunks = await ragProcessor.searchSimilarChunks(
+  message, agentId, 5, 0.7, 'hybrid'
+);
+
+// 3. Queue processing assíncrono
+await c.env.RAG_QUEUE.send({
+  type: 'rag_processing',
+  sourceId, agentId, data
+});
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🗣️ <strong>Narrativa e Storytelling</strong></h2>
+            
+            <h3><strong>Estrutura da História:</strong></h3>
+            <ol>
+                <li><strong>Problema:</strong> "IA genérica não resolve problemas específicos"</li>
+                <li><strong>Jornada:</strong> "Tentativas frustrantes com RAG"</li>
+                <li><strong>Descoberta:</strong> "Edge computing + Queue processing"</li>
+                <li><strong>Transformação:</strong> "Sistema completo em produção"</li>
+                <li><strong>Novo mundo:</strong> "IA personalizada para qualquer caso"</li>
+            </ol>
+
+            <div class="tip-box">
+                <h3><strong>Frases de Impacto:</strong></h3>
+                <ul>
+                    <li>"RAG não é mágica - é busca vetorial inteligente"</li>
+                    <li>"Edge computing não é hype - é necessidade"</li>
+                    <li>"Cloudflare Workers é o futuro do backend"</li>
+                    <li>"Semantic chunking muda tudo"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚡ <strong>Timing e Ritmo</strong></h2>
+            
+            <div class="timing-box">
+                <h3><strong>Regra 60-30-10:</strong></h3>
+                <ul>
+                    <li><strong>60%</strong> Explicação + Código</li>
+                    <li><strong>30%</strong> Demo Live</li>
+                    <li><strong>10%</strong> Q&A contínuo</li>
+                </ul>
+            </div>
+
+            <h3><strong>Checkpoints de Energia:</strong></h3>
+            <ul>
+                <li><strong>20min:</strong> Demo rápida para reengajar</li>
+                <li><strong>45min:</strong> Pergunta para plateia</li>
+                <li><strong>70min:</strong> Demo complexa final</li>
+            </ul>
+
+            <div class="emergency">
+                <h3><strong>Backup Plans:</strong></h3>
+                <ul>
+                    <li>Se demo falhar: Screenshots preparados</li>
+                    <li>Se internet cair: Versão local funcionando</li>
+                    <li>Se tempo acabar: Slides de resumo prontos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 <strong>Mensagens-Chave por Audiência</strong></h2>
+            
+            <div class="audience-grid">
+                <div class="audience">
+                    <h4><strong>Para Devs Junior:</strong></h4>
+                    <ul>
+                        <li>"Vocês podem construir isso"</li>
+                        <li>"Não precisam ser PhDs em ML"</li>
+                        <li>"Foquem na arquitetura, não nos algoritmos"</li>
+                    </ul>
+                </div>
+
+                <div class="audience">
+                    <h4><strong>Para Devs Senior:</strong></h4>
+                    <ul>
+                        <li>"Edge computing resolve latência real"</li>
+                        <li>"Queue processing é game changer"</li>
+                        <li>"Observabilidade desde o dia 1"</li>
+                    </ul>
+                </div>
+
+                <div class="audience">
+                    <h4><strong>Para Tech Leads:</strong></h4>
+                    <ul>
+                        <li>"Custo 10x menor que soluções tradicionais"</li>
+                        <li>"Escala automática sem configuração"</li>
+                        <li>"Deploy em segundos, não horas"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 <strong>Métricas para Impressionar</strong></h2>
+            
+            <div class="metrics-grid">
+                <div class="metric">
+                    <h4>⚡ Performance</h4>
+                    <ul>
+                        <li>"< 200ms response time global"</li>
+                        <li>"Processamento de PDF 50MB em < 30s"</li>
+                        <li>"Busca vetorial em < 50ms"</li>
+                    </ul>
+                </div>
+                
+                <div class="metric">
+                    <h4>🚀 Escala</h4>
+                    <ul>
+                        <li>"Milhares de agentes simultâneos"</li>
+                        <li>"Zero configuração de infraestrutura"</li>
+                        <li>"Auto-scaling de 0 a infinito"</li>
+                    </ul>
+                </div>
+                
+                <div class="metric">
+                    <h4>💰 Custo</h4>
+                    <ul>
+                        <li>"$0.01 por 1000 requests"</li>
+                        <li>"90% mais barato que AWS Lambda"</li>
+                        <li>"Sem custos fixos de servidor"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔧 <strong>Troubleshooting Live</strong></h2>
+            
+            <h3><strong>Se algo der errado:</strong></h3>
+            <ol>
+                <li><strong>Manter calma:</strong> "Isso é desenvolvimento real"</li>
+                <li><strong>Explicar problema:</strong> "Vejam como debugamos"</li>
+                <li><strong>Mostrar logs:</strong> "Observabilidade salva vidas"</li>
+                <li><strong>Resolver ou pular:</strong> "Vamos continuar"</li>
+            </ol>
+
+            <h3><strong>Comandos de Emergência:</strong></h3>
+            <div class="code-block" data-lang="bash">
+# Reset rápido
+npx wrangler deploy
+
+# Verificar logs
+npx wrangler tail
+
+# Testar endpoint
+curl https://seu-worker.workers.dev/api/health
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>🎉 <strong>Fechamento Forte</strong></h2>
+            
+            <h3><strong>Call to Action:</strong></h3>
+            <ol>
+                <li>"Clonem o repo hoje mesmo"</li>
+                <li>"Testem com seus próprios casos"</li>
+                <li>"Compartilhem o que construíram"</li>
+                <li>"Vamos revolucionar como usamos IA"</li>
+            </ol>
+
+            <h3><strong>Última Slide:</strong></h3>
+            <div class="code-block" data-lang="text">
+🚀 AI Agent Hub
+├── Repo: github.com/seu-usuario/ai-agent-hub
+├── Demo: https://019862e0-fab8-744d-84bb-1ee94c37a1a3.aiproexpert.workers.dev
+├── Docs: README.md completo
+└── Comunidade: Discord/Telegram do AI CODE PRO
+
+"A IA do futuro é personalizada, rápida e acessível.
+Vocês acabaram de ver como construir isso."
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 <strong>Checklist Final</strong></h2>
+            
+            <div class="checklist">
+                <h3><strong>1 Hora Antes:</strong></h3>
+                <ul>
+                    <li>Testar internet e demos</li>
+                    <li>Abrir todos os terminais</li>
+                    <li>Verificar áudio/vídeo</li>
+                    <li>Preparar água/café</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h3><strong>30min Antes:</strong></h3>
+                <ul>
+                    <li>Deploy fresh da aplicação</li>
+                    <li>Testar todos os fluxos</li>
+                    <li>Preparar PDFs para demo</li>
+                    <li>Revisar slides principais</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h3><strong>Durante:</strong></h3>
+                <ul>
+                    <li>Manter energia alta</li>
+                    <li>Interagir com chat</li>
+                    <li>Fazer perguntas à plateia</li>
+                    <li>Mostrar paixão pelo projeto</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h3><strong>Depois:</strong></h3>
+                <ul>
+                    <li>Compartilhar links</li>
+                    <li>Responder dúvidas</li>
+                    <li>Conectar com interessados</li>
+                    <li>Planejar próximos passos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

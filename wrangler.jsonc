@@ -1,0 +1,56 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "019862e0-fab8-744d-84bb-1ee94c37a1a3",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+  },
+  "vars": {
+    "PINECONE_HOST": "https://mocha-rag-ww2ds6u.svc.aped-4627-b74a.pinecone.io",
+    "PINECONE_INDEX_NAME": "mocha-rag"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai-agent-hub-db",
+      "database_id": "0fff7b04-ae7b-4a9d-a6d1-025e81802a82",
+    },
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "documents"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "acf42d9cdc4449968860ed3b7ee7ed60"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "RAG_QUEUE",
+        "queue": "rag-processing",
+        "delivery_delay": 0
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "rag-processing",
+        "max_batch_size": 10,
+        "max_batch_timeout": 10,
+        "max_retries": 3,
+        "dead_letter_queue": "rag-processing-dlq"
+      }
+    ]
+  }
+}
